@@ -1,0 +1,43 @@
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-item a:hover {
+  background-color: #9693ff;
+  color: white !important;
+  border-radius: 3px;
+}
+.my-nav {
+  background-color: rgb(240, 251, 255);
+}
+.navs {
+  margin-left: auto;
+  margin-right: 80px;
+}
+.btn-outline {
+  border: 2px solid rgb(128, 204, 179);
+  padding: 5px 25px;
+  border-radius: 25px;
+}
+.btn-outline:hover {
+  background-color: #9693ff;
+  padding: 6px 25px;
+  border-radius: 25px;
+  color: white;
+}
+.userImg {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Responsive Here */
+@media only screen and (max-width: 650px) {
+  .navs {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .nav-item {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
