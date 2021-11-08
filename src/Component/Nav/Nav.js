@@ -12,7 +12,7 @@ const Nav = () => {
             <img src={Logo} alt="" width="150" />
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -22,11 +22,14 @@ const Nav = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav mb-2 mb-lg-0 fs-4 navs ">
               <li className="nav-item">
                 <Link
-                  className="nav-link active text-dark"
+                  className="nav-link active text-light"
                   aria-current="page"
                   to="/home"
                 >
@@ -82,7 +85,9 @@ const Nav = () => {
 
             <div className="buttons ms-auto">
               <Link to="/login">
-                <button className="btn btn-outline me-3">LogIn</button>
+                <button className="btn btn-outline me-3 text-light">
+                  LogIn
+                </button>
               </Link>
             </div>
           </div>

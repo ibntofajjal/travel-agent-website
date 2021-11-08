@@ -1,0 +1,36 @@
+.login-text {
+  text-align: center;
+  background-color: #ffc903;
+  /* color: white; */
+  font-weight: bolder;
+  text-transform: uppercase;
+  width: 30%;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+}
+.login-img img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 5rem;
+}
+
+/*  Responsive This Page  */
+@media only screen and (max-width: 688px) {
+  .login-text {
+    background-color: #ffc903;
+    width: 80%;
+    font-size: 20px;
+  }
+  .login-img img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 5rem;
+  }
+}
