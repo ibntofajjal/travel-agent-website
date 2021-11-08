@@ -1,0 +1,57 @@
+.banner {
+  background-image: url("../../img/road.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.bannerLogo {
+  width: 40%;
+  padding-top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.our-story-section {
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+.our-story {
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+.story-text {
+  padding: 160px;
+}
+.story-text spam {
+  background-color: #f78e47;
+  font-weight: bold;
+  color: black;
+  border-radius: 5px;
+  padding: 7px 12px;
+}
+
+/* ======================================== */
+/* Responsive The Page */
+/* ======================================== */
+
+@media only screen and (max-width: 688px) {
+  .banner {
+    height: 65vh;
+  }
+  .bannerLogo {
+    width: 60%;
+    padding-top: 11rem;
+  }
+  .story-text {
+    padding: 50px 0;
+  }
+  .our-story {
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: white;
+  }
+}

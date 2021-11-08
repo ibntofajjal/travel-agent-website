@@ -1,6 +1,5 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Component/Header/Header";
 import Home from "./Component/Home/Home";
 import Nav from "./Component/Nav/Nav";
 import AddTravelSpot from "./Component/AddTravelSpot/AddTravelSpot";
@@ -9,6 +8,9 @@ import ManageAllBooking from "./Component/ManageAllBooking/ManageAllBooking";
 import About from "./Component/About/About";
 import Contact from "./Component/Contact/Contact";
 import Login from "./Component/Login/Login";
+import NotFound from "./Component/NotFound/NotFound";
+import Footer from "./Component/Footer/Footer";
+import TravelSpot from "./Component/Home/TravelSpot/TravelSpot";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
           <Route path="/addSpot">
             <AddTravelSpot></AddTravelSpot>
           </Route>
+          <Route path="/travelSpots">
+            <TravelSpot></TravelSpot>
+          </Route>
           <Route path="/booking">
             <MyBooking></MyBooking>
           </Route>
@@ -40,7 +45,11 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </div>
   );

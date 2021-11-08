@@ -1,18 +1,23 @@
 .nav-item {
   font-size: 18px;
   font-weight: 500;
+  margin-left: 10px;
 }
 .nav-item a:hover {
   background-color: #9693ff;
   color: white !important;
   border-radius: 3px;
 }
+.nav-item a {
+  color: white !important;
+}
 .my-nav {
-  background-color: rgb(240, 251, 255);
+  background-color: rgb(43, 43, 43);
 }
 .navs {
   margin-left: auto;
   margin-right: 80px;
+  color: white !important;
 }
 .btn-outline {
   border: 2px solid rgb(128, 204, 179);
