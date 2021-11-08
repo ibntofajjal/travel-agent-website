@@ -1,0 +1,39 @@
+.not-found-page {
+  background-image: url("../../img/error.gif");
+  height: 40vw;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.back2home {
+  margin-top: 15rem;
+  text-align: center;
+  margin-left: 47%;
+  margin-top: 28%;
+  padding: 5px 10px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: auto;
+}
+
+/* ========================== Responsive ==========================*/
+@media only screen and (max-width: 668px) {
+  .not-found-page {
+    background-image: url("../../img/error.gif");
+    height: 100vw;
+  }
+  .back2home {
+    margin-top: 15rem;
+    text-align: center;
+    margin-left: 7.5rem;
+    padding: 5px 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: auto;
+  }
+}
