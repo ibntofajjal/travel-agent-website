@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import titleLogo from "../../img/title.png";
 import ourStory from "../../img/our-story.png";
+import Services from "../Services/Services";
+import Carousel from "./Carousel/Carousel";
 
 const Home = () => {
   return (
@@ -10,7 +12,9 @@ const Home = () => {
         <img className="bannerLogo" src={titleLogo} alt="" />
       </div>
 
-      {/* Extra Section */}
+      <Services></Services>
+
+      {/* Extra Section - 1 */}
       <div className="our-story-section">
         <div className="row our-story">
           <div className="col-lg-6 col-md-6 col-sm-12 story-text">
@@ -32,6 +36,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Carousel></Carousel>
     </div>
   );
 };

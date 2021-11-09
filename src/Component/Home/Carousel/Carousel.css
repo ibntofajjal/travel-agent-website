@@ -1,0 +1,19 @@
+.carousel-sec {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.right-txt h1 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #f78e47;
+}
+
+@media only screen and (max-width: 688px) {
+  .right-txt h1 {
+    font-size: 40px;
+  }
+  .carousel-sec {
+    display: none;
+  }
+}

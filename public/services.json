@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Mandu, Indonesia",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/Colosseum.png",
+    "cost": 7000,
+    "des": "This is a Description"
+  },
+  {
+    "name": "Everest, Nepal",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/avarest.png",
+    "cost": 7550,
+    "des": "Mount Everest is located on Nepal"
+  },
+  {
+    "name": "Bali, Indonesia",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/bali.png",
+    "cost": 5600,
+    "des": "Bali Beach is located in Indonesia."
+  },
+  {
+    "name": "Gold-Gate, Dubai",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/dubai.png",
+    "cost": 4826,
+    "des": "The Gold-Gate is located in Dubai."
+  },
+  {
+    "name": "New York City",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/dubai2.png",
+    "cost": 5955,
+    "des": "Night View Of New York City."
+  },
+  {
+    "name": "Dubai City",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/dubai3.png",
+    "cost": 6000,
+    "des": "Night View Of Dubai City."
+  },
+  {
+    "name": "Cruls Tower",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/dubai4.png",
+    "cost": 4845,
+    "des": "Cruls Tower is located in Dubai."
+  },
+  {
+    "name": "Old Mandir, Nepal",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/grezz.png",
+    "cost": 8410,
+    "des": "Old Mandir is located in Nepal."
+  },
+  {
+    "name": "Naiagara, New York",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/jolopropath.png",
+    "cost": 9595,
+    "des": "Naiagara is located in New York."
+  },
+  {
+    "name": "Tajmahal, Agra",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/mosque.png",
+    "cost": 2620,
+    "des": "Tajhmahal is located in Agra."
+  },
+  {
+    "name": "Alberta City",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/newYorkCity.png",
+    "cost": 4812,
+    "des": "Alberta's is located in Canada."
+  },
+  {
+    "name": "Paris City",
+    "img": "https://raw.githubusercontent.com/ibntofajjal/fake-images/main/tourSpot/paris.png",
+    "cost": 9853,
+    "des": "The Eiffel Tower  is located in Paris"
+  }
+]

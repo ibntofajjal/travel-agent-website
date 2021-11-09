@@ -11,6 +11,8 @@ import Login from "./Component/Login/Login";
 import NotFound from "./Component/NotFound/NotFound";
 import Footer from "./Component/Footer/Footer";
 import TravelSpot from "./Component/Home/TravelSpot/TravelSpot";
+import Services from "./Component/Services/Services";
+import Carousel from "./Component/Home/Carousel/Carousel";
 
 function App() {
   return (
@@ -44,6 +46,12 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/carousel">
+            <Carousel></Carousel>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
