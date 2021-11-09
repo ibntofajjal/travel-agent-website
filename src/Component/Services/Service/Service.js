@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = (props) => {
-  const { name, cost, img, des } = props.service;
+  const { name, cost, img, des, _id } = props.service;
   return (
     <div>
       <div className="spot-card">
@@ -18,7 +19,9 @@ const Service = (props) => {
             Description: <b>{des}</b>
           </p>
         </div>
-        <button>Book Now</button>
+        <Link to={`/booking/${_id}`}>
+          <button>Book Now</button>
+        </Link>
       </div>
     </div>
   );

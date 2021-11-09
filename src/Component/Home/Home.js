@@ -19,7 +19,7 @@ const Home = () => {
         <div className="row our-story">
           <div className="col-lg-6 col-md-6 col-sm-12 story-text">
             <h1 className="mb-4">Our Story</h1>
-            <spam className="my-2">INSPIRED & PASSIONATE TRAVELERS</spam>
+            <span className="my-2">INSPIRED & PASSIONATE TRAVELERS</span>
             <p className="mt-4">
               “Travel is the main thing you purchase that makes you more
               extravagant”. We, at ‘Travel Agent’, swear by this and put stock

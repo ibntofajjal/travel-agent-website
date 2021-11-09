@@ -24,7 +24,7 @@
 .story-text {
   padding: 160px;
 }
-.story-text spam {
+.story-text span {
   background-color: #f78e47;
   font-weight: bold;
   color: black;

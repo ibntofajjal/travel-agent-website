@@ -5,7 +5,7 @@ import Service from "./Service/Service";
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch(`./services.json`)
+    fetch(`http://localhost:5000/services`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -14,7 +14,7 @@ const Services = () => {
       <h1 className="text-center mb-5">Our Recommended Tour Spots</h1>
       <div className="service-section container">
         {services.map((service) => (
-          <Service service={service} key={service.key}></Service>
+          <Service service={service} key={service._id}></Service>
         ))}
       </div>
     </div>

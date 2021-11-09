@@ -1,0 +1,19 @@
+.booking-page {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+.booking-row {
+  align-items: center;
+  justify-content: space-between;
+}
+.booking-form input {
+  width: 100%;
+}
+
+/* Responsive this page */
+@media only screen and (max-width: 688px) {
+  .booking-page {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+  }
+}

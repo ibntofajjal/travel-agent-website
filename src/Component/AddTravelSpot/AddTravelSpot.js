@@ -13,8 +13,8 @@ const AddTravelSpot = () => {
   const onSubmit = (data) => {
     fetch(`http://localhost:5000/addSpot`, {
       method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify(),
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
     })
       .then((res) => res.json())
       .then((result) => console.log(result));

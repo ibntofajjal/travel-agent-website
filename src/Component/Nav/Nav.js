@@ -2,11 +2,13 @@ import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
+import useAuth from "../../hooks/useAuth";
 
 const Nav = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top my-nav d-block mb-5">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top my-nav d-block mb-5">
         <div className="container">
           <Link to="/home" className="navbar-brand">
             <img src={Logo} alt="" width="150" />
@@ -49,15 +51,6 @@ const Nav = () => {
                 <Link
                   className="nav-link active text-dark"
                   aria-current="page"
-                  to="/booking"
-                >
-                  My Booking
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link active text-dark"
-                  aria-current="page"
                   to="/manage"
                 >
                   Manage All Booking
@@ -82,12 +75,27 @@ const Nav = () => {
                 </Link>
               </li>
             </ul>
-
+            <img
+              src={user?.photoURL}
+              className="img-fluid me-3 rounded-pill"
+              width="40"
+              alt=""
+            />
+            <h5 className="text-warning">{user?.displayName}</h5>
             <div className="buttons ms-auto">
               <Link to="/login">
-                <button className="btn btn-outline me-3 text-light">
-                  LogIn
-                </button>
+                {user?.email ? (
+                  <button
+                    onClick={logOut}
+                    className="btn btn-primary me-3 text-light"
+                  >
+                    LogOut
+                  </button>
+                ) : (
+                  <button className="btn btn-outline me-3 text-light">
+                    LogIn
+                  </button>
+                )}
               </Link>
             </div>
           </div>
