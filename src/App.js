@@ -29,18 +29,18 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/addSpot">
+            <PrivateRoute path="/addSpot">
               <AddTravelSpot></AddTravelSpot>
-            </Route>
+            </PrivateRoute>
             <Route path="/travelSpots">
               <TravelSpot></TravelSpot>
             </Route>
             <PrivateRoute path="/booking/:serviceId">
               <MyBooking></MyBooking>
             </PrivateRoute>
-            <Route path="/manage">
+            <PrivateRoute path="/manage">
               <ManageAllBooking></ManageAllBooking>
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <About></About>
             </Route>
@@ -49,12 +49,6 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
-            </Route>
-            <Route path="/services">
-              <Services></Services>
-            </Route>
-            <Route path="/carousel">
-              <Carousel></Carousel>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
