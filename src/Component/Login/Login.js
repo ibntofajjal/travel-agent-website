@@ -13,6 +13,8 @@ const Login = () => {
 
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {
+      // Extra added the SessionStorage
+      sessionStorage.setItem("email", result.user.email);
       history.push(redirect_uri);
     });
   };

@@ -8,6 +8,7 @@ const MyBooking = () => {
   const { serviceId } = useParams();
   const [service, setService] = useState({});
 
+  const email = sessionStorage.getItem("email");
   useEffect(() => {
     fetch(`http://localhost:5000/singleProduct/${serviceId}`)
       .then((res) => res.json())
@@ -20,6 +21,15 @@ const MyBooking = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
+    data.email = { email };
+
+    fetch(`http://localhost:5000/confirmOder`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => console.log(result));
     console.log(data);
   };
 
@@ -43,8 +53,14 @@ const MyBooking = () => {
               <input
                 type="email"
                 placeholder="Email"
-                defaultValue={service?.email}
+                value={email}
                 {...register("email")}
+              />
+              <br />
+              <input
+                type="text"
+                placeholder="Type Something"
+                {...register("booking-des")}
               />
               <br />
               <input
