@@ -11,7 +11,7 @@ const AddTravelSpot = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch(`http://localhost:5000/addSpot`, {
+    fetch(`https://fathomless-garden-20403.herokuapp.com/addSpot`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

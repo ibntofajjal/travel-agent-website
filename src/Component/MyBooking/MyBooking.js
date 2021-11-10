@@ -10,7 +10,9 @@ const MyBooking = () => {
 
   const email = sessionStorage.getItem("email");
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${serviceId}`)
+    fetch(
+      `https://fathomless-garden-20403.herokuapp.com/singleProduct/${serviceId}`
+    )
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -23,7 +25,7 @@ const MyBooking = () => {
   const onSubmit = (data) => {
     data.email = { email };
 
-    fetch(`http://localhost:5000/confirmOder`, {
+    fetch(`https://fathomless-garden-20403.herokuapp.com/confirmOder`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

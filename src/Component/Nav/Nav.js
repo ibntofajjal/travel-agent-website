@@ -47,27 +47,15 @@ const Nav = () => {
                   Add Travel Spot
                 </Link>
               </li>
-              {user?.email ? (
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active text-dark"
-                    aria-current="page"
-                    to="/manage"
-                  >
-                    Manage All Booking
-                  </Link>
-                </li>
-              ) : (
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active text-dark"
-                    aria-current="page"
-                    to="/about"
-                  >
-                    About Us
-                  </Link>
-                </li>
-              )}
+              <li className="nav-item">
+                <Link
+                  className="nav-link active text-dark"
+                  aria-current="page"
+                  to="/about"
+                >
+                  About Us
+                </Link>
+              </li>
 
               <li className="nav-item">
                 <Link
